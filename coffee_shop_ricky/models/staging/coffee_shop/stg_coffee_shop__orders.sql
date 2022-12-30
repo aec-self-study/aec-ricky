@@ -5,12 +5,12 @@ with source as (
 renamed as (
     select
         id as orders_id,
-        created_at as orders_created_at,
         customer_id as customers_id,
-        total as orders_total,
         address as orders_address,
         state as orders_state,
-        zip as orders_zip
+        zip as orders_zip,
+        total as orders_total,
+        created_at as orders_created_at
     from source
 )
 
