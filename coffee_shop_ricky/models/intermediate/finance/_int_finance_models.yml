@@ -1,10 +1,10 @@
 version: 2
  
 models:
-  - name: customers
+  - name: int_customers_new
     description: Cleaned up data for our customers
     columns:
-      - name: customer_id
+      - name: customers_id
         description: Primary key of the model
         tests:
           - unique
