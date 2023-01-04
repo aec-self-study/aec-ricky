@@ -10,6 +10,9 @@ sources:
             tests:
               - unique
               - not_null
+              - relationships:
+                  to: source('coffee_shop','orders')
+                  field: customer_id
 
       - name: orders
         columns:
@@ -52,4 +55,4 @@ sources:
           - name: id
             test:
               - unique
-              - not_null    
+              - not_null 
